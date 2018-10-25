@@ -5,11 +5,12 @@
 ## 描述
 - nvidia/cuda:8.0-cudnn6-devel
 - common ubuntu tools (cmake git vim wget unzip etc.)
+- OpenCV 3.4.2
 - python3.5
   - tensorflow-gpu==1.4
   - common python libraries
-  - flask
-  - OpenCV3.4.2
+  - Flask==1.0.2
+  - opencv-python==3.4
 
 ## 开始
 

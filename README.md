@@ -93,7 +93,7 @@ $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
 
 - 更新容器镜像
 
-  > 在镜像里更新后，使用```exit``` 退出镜像
+  > 在容器里更新后，使用```exit``` 退出容器
 
   ```bash
   $ sudo docker commit -m="[*]updated" -a="Kevin T. Lee" <containner_id> kevinleeex/tensorflow-with-web_gpu:v2

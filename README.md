@@ -6,18 +6,21 @@
 
 ## 开始
 
-### 直接拉取镜像
+- 直接拉取镜像
 
-> 国内可能会出现速度很慢的情况
+> 国内可能会出现速度很慢的情况，可以使用阿里云的docker镜像源加速，参考[使用阿里云Docker镜像仓库](https://yq.aliyun.com/ziliao/283741)
 
 ```bash
 $ sudo docker pull kevinleeex/tensorflow-with-web_gpu
 ```
 
-### 从Dockerfile构建
+
+
+- 从Dockerfile构建
 
 ```bash
-$ git clone 
+$ git clone https://github.com/kevinleeex/Docker-Tensorflow-with-Web_GPU.git
+$ cd ./Docker-Tensorflow-with-Web_GPU
 $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
 ```
 
@@ -50,11 +53,13 @@ $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
 
     - -p 表示端口映射
 
-    - --runtime 表示运行环境
+    - --runtime 表示运行环境(eg: nvidia)
 
     - -d 和--rm 同时使用 表示容器在退出的时候移除或者后台退出时移除
 
     - -v 挂载目录/abs_path/to/host:/abs_path/to/container
+
+
 
 - 列出容器
 
@@ -65,6 +70,9 @@ $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
   - 参数
 
     - -a 表示全部
+
+
+
 
 - 删除容器
 
@@ -96,13 +104,16 @@ $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
     - -m 表示提交的消息
     - -a 表示作者信息
 
--  列出镜像
+
+
+
+- 列出镜像
 
    ```bash
    $ sudo docker images
    ```
 
--  删除镜像
+- 删除镜像
 
    > 先删除容器再删除镜像
 
@@ -112,3 +123,6 @@ $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
 
 
 
+## 声明
+
+© 2018 | Kevin T. Lee all rights reserved. 本项目采用[MIT](./LICENSE)协议。

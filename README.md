@@ -73,14 +73,13 @@ $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
 
 
 
-
 - 删除容器
 
   ```bash
   $ sudo docker rm <container_id>
   ```
 
-- 开始容器
+- 启动容器
 
   ```bash
   $ sudo docker start -a <container_id>

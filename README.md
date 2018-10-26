@@ -2,7 +2,15 @@
 
 这是一个包含python/tensorflow/flask/opencv等库的基于NVIDIA运行环境的docker镜像。
 
-
+## 描述
+- nvidia/cuda:8.0-cudnn6-devel
+- common ubuntu tools (cmake git vim wget unzip etc.)
+- OpenCV 3.4.2
+- python3.5
+  - tensorflow-gpu==1.4
+  - common python libraries
+  - Flask==1.0.2
+  - opencv-python==3.4
 
 ## 开始
 
@@ -14,17 +22,13 @@
 $ sudo docker pull kevinleeex/tensorflow-with-web_gpu
 ```
 
-
-
 - 从Dockerfile构建
-
+> 你可以修改目录下的```requirements.txt```文件安装你需要的库
 ```bash
 $ git clone https://github.com/kevinleeex/Docker-Tensorflow-with-Web_GPU.git
 $ cd ./Docker-Tensorflow-with-Web_GPU
 $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
 ```
-
-
 
 ## Docker 常用操作
 

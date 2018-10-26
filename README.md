@@ -89,7 +89,12 @@ $ sudo docker build -t kevinleeex/tensorflow-with-web_gpu:latest .
 
     - -a 表示attach连接
 
+- 在镜像和主机之间复制文件(夹)
 
+   ```bash
+   $ sudo docker cp src/. <container_id>:/dst
+   $ sudo docker cp <container_id>:/src/. dst
+   ```
 
 - 更新容器镜像
 
